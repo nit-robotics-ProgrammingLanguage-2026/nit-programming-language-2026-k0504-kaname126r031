@@ -1,2 +1,6 @@
 #include <stdio.h>
-int main(void){int a;scanf("%d",&a);int f=!(a<0||(a>=10&&a<12)||a>=15);if(f==1){printf("OK");}else{printf("NG");}return 0;}
+int main(void){int number;scanf("%d",&number);
+     // OKにならない条件を判定する
+    int is_ok=!(number<0||(number>=10&&number<12)||number>=15);
+    // 判定結果に応じて表示する
+    if(is_ok==1){printf("OK");}else{printf("NG");}return 0;}
